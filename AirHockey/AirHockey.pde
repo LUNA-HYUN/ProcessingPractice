@@ -1,4 +1,10 @@
 float vx_b, vy_b, X_b, Y_b, vy_p1, vy_p2, Y_p1, Y_p2;
+float moveSpeed = 5;
+boolean Q_pressed = false;
+boolean A_pressed = false;
+boolean P_pressed = false;
+boolean L_pressed = false;
+
 void setup(){
   size(800 , 400);
   
@@ -20,7 +26,9 @@ void setup(){
 void draw(){
   background(0, 0, 0);
   player1(Y_p1);
+  player1_move();
   player2(Y_p2);
+  player2_move();
   ball(X_b, Y_b);
   ball_move();
 }
