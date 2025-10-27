@@ -29,6 +29,7 @@ void draw(){
   player1_move();
   player2(Y_p2);
   player2_move();
+  
   ball(X_b, Y_b);
   ball_move();
 }
